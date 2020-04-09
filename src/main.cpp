@@ -3,6 +3,7 @@
 void setup() {
   // put your setup code here, to run once:.
   pinMode(BUILTIN_LED, OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -11,4 +12,6 @@ void loop() {
   delay(1000);
   digitalWrite(BUILTIN_LED, LOW);
   delay(1000);
+  Serial.print("assd");
+  
 }
